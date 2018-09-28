@@ -8,20 +8,27 @@
 
 import UIKit
 
+
 class TodoListWorker {
 
+    let service: Service
+    
+    init(service: Service) {
+        self.service = service
+    }
+    
     func fetchTodoList(userId:String, completionBlock:@escaping ([Item]) -> ()) {
         
-        FirebaseManager.itemsList(userId: userId, completion: completionBlock)
+        service.itemsList(userId: userId, completion: completionBlock)
     }
     
     func addItems(text:String, userId:String) {
         
-        FirebaseManager.saveItem(text: text, userId: userId)
+        service.saveItem(text: text, userId: userId)
     }
     
     func deleteItem(item:Item) {
         
-        FirebaseManager.deleteItem(item: item)
+        service.deleteItem(item: item)
     }
 }

@@ -10,41 +10,47 @@ import Foundation
 import FirebaseAuth
 import FirebaseDatabase
 
-class FirebaseManager {
+protocol Service {
     
-    static var ref = Database.database().reference()
-    static let usersKey = "users"
-    static let itemsKey = "items"
-    static let titleKey = "title"
+    func saveItem(text:String, userId:String)
+    func itemsList(userId:String, completion:@escaping (_ items:[Item])->())
+    func deleteItem(item:Item)
+}
 
-    class func registration(email:String, password:String, completion:@escaping (_ error:Error?)->()) {
+class FirebaseManager: Service {
+    
+    let ref = Database.database().reference()
+    let usersKey = "users"
+    let itemsKey = "items"
+    let titleKey = "title"
+    
+    func registration(email:String, password:String, completion:@escaping (_ error:Error?)->()) {
         
         Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
             completion(error)
         }
     }
     
-    class func signIn(email:String, password:String, completion:@escaping (_ error:Error?)->()) {
+    func signIn(email:String, password:String, completion:@escaping (_ error:Error?)->()) {
         
         Auth.auth().signIn(withEmail: email, password: password) { (authResult, error) in
             completion(error)
         }
     }
     
-    class func retrieveUserId () -> User? {
+    func retrieveUserId () -> User? {
         
         return Auth.auth().currentUser
     }
     
-    class func saveItem(text:String, userId:String) {
-    
+    func saveItem(text:String, userId:String) {
         ref.child(usersKey).child(userId).child(itemsKey).childByAutoId().child(titleKey).setValue(text)
     }
     
-    class func itemsList(userId:String, completion:@escaping (_ items:[Item])->()) {
+    func itemsList(userId:String, completion:@escaping (_ items:[Item])->()) {
         
         
-        ref.child("\(usersKey)/\(userId)/\(itemsKey)").observe(.value) { (snapshot) in
+        ref.child("\(usersKey)/\(userId)/\(itemsKey)").observe(.value) { [weak self] (snapshot)  in
             
             var newItems = [Item]()
             
@@ -52,7 +58,7 @@ class FirebaseManager {
                 
                 let dbRef = (itemSnapShot as! DataSnapshot).ref
                 let data = (itemSnapShot as! DataSnapshot).value as! Dictionary<String, String>
-                let title = data[titleKey] ?? ""
+                let title = data[(self?.titleKey)!] ?? ""
                 
                 let item = Item(ref:dbRef, itemTitle:title)
                 newItems.append(item)
@@ -61,9 +67,10 @@ class FirebaseManager {
         }
     }
     
-    class func deleteItem(item:Item) {
+    func deleteItem(item:Item) {
         
         item.dbRef?.removeValue()
     }
-        
+    
 }
+

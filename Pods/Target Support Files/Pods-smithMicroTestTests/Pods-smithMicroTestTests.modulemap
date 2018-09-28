@@ -1,0 +1,6 @@
+framework module Pods_smithMicroTestTests {
+  umbrella header "Pods-smithMicroTestTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

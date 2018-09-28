@@ -80,7 +80,7 @@ extension LoginViewController {
         }
         
         let request = Login.FetchLogin.Request(username: username, password: password)
-        interactor?.doSomething(request: request)
+        interactor?.loginRequest(request: request)
     }
 }
 

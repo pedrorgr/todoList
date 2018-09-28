@@ -11,9 +11,15 @@ import FirebaseAuth
 
 class LoginWorker {
 
-    func doSomeWork(email:String, password:String, completion:@escaping (_ error:Error?) ->()) {
+    let service: FirebaseManager
+    
+    init(service: FirebaseManager) {
+        self.service = service
+    }
+    
+    func loginRequest(email:String, password:String, completion:@escaping (_ error:Error?) ->()) {
         
-        FirebaseManager.signIn(email: email, password: password) { (error) in
+        service.signIn(email: email, password: password) { (error) in
             completion(error)
         }
     }

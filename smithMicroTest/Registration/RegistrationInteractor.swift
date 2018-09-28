@@ -14,8 +14,7 @@ protocol RegistrationBusinessLogic {
 }
 
 protocol RegistrationDataStore {
-
-    //var name: String { get set }
+    
 }
 
 class RegistrationInteractor: RegistrationBusinessLogic, RegistrationDataStore {
@@ -26,8 +25,8 @@ class RegistrationInteractor: RegistrationBusinessLogic, RegistrationDataStore {
     // MARK: Do something
     func registrationRequest(request: Registration.FetchRegistration.Request) {
 
-        worker = RegistrationWorker()
-        worker?.doSomeWork(email: request.email, password: request.password, completion: { (error) in
+        worker = RegistrationWorker(service: FirebaseManager())
+        worker?.registrationRequest(email: request.email, password: request.password, completion: { (error) in
             if error == nil {
                 self.presenter?.presentRegistrationSuccess()
 

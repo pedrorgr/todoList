@@ -10,25 +10,23 @@ import UIKit
 
 protocol LoginBusinessLogic {
 
-    func doSomething(request: Login.FetchLogin.Request)
+    func loginRequest(request: Login.FetchLogin.Request)
 }
 
 protocol LoginDataStore {
 
-    //var name: String { get set }
 }
 
 class LoginInteractor: LoginBusinessLogic, LoginDataStore {
 
     var presenter: LoginPresentationLogic?
     var worker: LoginWorker?
-    //var name: String = ""
 
     // MARK: Do something
-    func doSomething(request: Login.FetchLogin.Request) {
+    func loginRequest(request: Login.FetchLogin.Request) {
 
-        worker = LoginWorker()
-        worker?.doSomeWork(email: request.username, password: request.password, completion: { [weak self] (error) in
+        worker = LoginWorker(service: FirebaseManager())
+        worker?.loginRequest(email: request.username, password: request.password, completion: { [weak self] (error) in
             if error == nil {
                 self?.presenter?.presentLoginSuccess()
             } else {

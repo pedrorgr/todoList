@@ -24,12 +24,14 @@ class TodoListInteractor: TodoListBusinessLogic, TodoListDataStore {
     var presenter: TodoListPresentationLogic?
     var worker: TodoListWorker?
 
+    let service = FirebaseManager()
+    
     // MARK: Do something
     func fetchTodoList(request: TodoList.FetchList.Request) {
         
-        worker = TodoListWorker()
+        worker = TodoListWorker(service: service)
 
-        guard let user = FirebaseManager.retrieveUserId() else {
+        guard let user = service.retrieveUserId() else {
             return
         }
         
@@ -42,9 +44,9 @@ class TodoListInteractor: TodoListBusinessLogic, TodoListDataStore {
     
     func addItems(request: TodoList.AddItems.Request) {
 
-        worker = TodoListWorker()
+        worker = TodoListWorker(service: service)
         
-        guard let user = FirebaseManager.retrieveUserId() else {
+        guard let user = service.retrieveUserId() else {
             return
         }
         
@@ -56,7 +58,7 @@ class TodoListInteractor: TodoListBusinessLogic, TodoListDataStore {
     
     func deleteItem(request: TodoList.DeleteItems.Request) {
         
-        worker = TodoListWorker()
+        worker = TodoListWorker(service: service)
         worker?.deleteItem(item:request.item)
         
         let response = TodoList.AddItems.Response()

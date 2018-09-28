@@ -29,7 +29,7 @@
 		EE3F2AC421579E7E0043FD70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE3F2AC221579E7E0043FD70 /* Main.storyboard */; };
 		EE3F2AC621579E7E0043FD70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE3F2AC521579E7E0043FD70 /* Assets.xcassets */; };
 		EE3F2AC921579E7E0043FD70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE3F2AC721579E7E0043FD70 /* LaunchScreen.storyboard */; };
-		EE3F2AD421579E7E0043FD70 /* smithMicroTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3F2AD321579E7E0043FD70 /* smithMicroTestTests.swift */; };
+		EE3F2AD421579E7E0043FD70 /* TodoListWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3F2AD321579E7E0043FD70 /* TodoListWorkerTests.swift */; };
 		EE5816042158346F001A5F18 /* TodoListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5815FD2158346F001A5F18 /* TodoListInteractor.swift */; };
 		EE5816052158346F001A5F18 /* TodoListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5815FD2158346F001A5F18 /* TodoListInteractor.swift */; };
 		EE5816062158346F001A5F18 /* TodoListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5815FE2158346F001A5F18 /* TodoListModels.swift */; };
@@ -65,6 +65,7 @@
 		EE581643215AEC5B001A5F18 /* UIViewController+ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE581641215AEC5B001A5F18 /* UIViewController+ActivityIndicator.swift */; };
 		EEF720DB215C2E72006EAF1F /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF720DA215C2E71006EAF1F /* Items.swift */; };
 		EEF720DC215C2E72006EAF1F /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF720DA215C2E71006EAF1F /* Items.swift */; };
+		FAC91C5B9AA964D7E47D34C5 /* Pods_smithMicroTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668D7B9636E1BC62E9BB47C7 /* Pods_smithMicroTestTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +81,10 @@
 /* Begin PBXFileReference section */
 		2E323E427EEB68BBB1C36454 /* Pods-smithMicroTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smithMicroTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-smithMicroTest/Pods-smithMicroTest.release.xcconfig"; sourceTree = "<group>"; };
 		3326644F181A6F881986AB46 /* Pods_smithMicroTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smithMicroTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		668D7B9636E1BC62E9BB47C7 /* Pods_smithMicroTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smithMicroTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E66B5552439159EF1A03A7B /* Pods-smithMicroTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smithMicroTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-smithMicroTestTests/Pods-smithMicroTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		A4DC8D8251582124281CA392 /* Pods-smithMicroTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smithMicroTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smithMicroTest/Pods-smithMicroTest.debug.xcconfig"; sourceTree = "<group>"; };
+		D98C7F363577777C6CDC0AA1 /* Pods-smithMicroTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smithMicroTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smithMicroTestTests/Pods-smithMicroTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EE1794162157BF47004FF37D /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		EE1794172157BF47004FF37D /* LoginModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
 		EE1794182157BF47004FF37D /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
@@ -97,7 +101,7 @@
 		EE3F2AC821579E7E0043FD70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE3F2ACA21579E7E0043FD70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE3F2ACF21579E7E0043FD70 /* smithMicroTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smithMicroTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE3F2AD321579E7E0043FD70 /* smithMicroTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smithMicroTestTests.swift; sourceTree = "<group>"; };
+		EE3F2AD321579E7E0043FD70 /* TodoListWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListWorkerTests.swift; sourceTree = "<group>"; };
 		EE3F2AD521579E7E0043FD70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE5815FD2158346F001A5F18 /* TodoListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListInteractor.swift; sourceTree = "<group>"; };
 		EE5815FE2158346F001A5F18 /* TodoListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListModels.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC91C5B9AA964D7E47D34C5 /* Pods_smithMicroTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +147,8 @@
 			children = (
 				A4DC8D8251582124281CA392 /* Pods-smithMicroTest.debug.xcconfig */,
 				2E323E427EEB68BBB1C36454 /* Pods-smithMicroTest.release.xcconfig */,
+				D98C7F363577777C6CDC0AA1 /* Pods-smithMicroTestTests.debug.xcconfig */,
+				6E66B5552439159EF1A03A7B /* Pods-smithMicroTestTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -150,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				3326644F181A6F881986AB46 /* Pods_smithMicroTest.framework */,
+				668D7B9636E1BC62E9BB47C7 /* Pods_smithMicroTestTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -210,7 +218,7 @@
 		EE3F2AD221579E7E0043FD70 /* smithMicroTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				EE3F2AD321579E7E0043FD70 /* smithMicroTestTests.swift */,
+				EE3F2AD321579E7E0043FD70 /* TodoListWorkerTests.swift */,
 				EE3F2AD521579E7E0043FD70 /* Info.plist */,
 			);
 			path = smithMicroTestTests;
@@ -295,9 +303,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE3F2ADB21579E7E0043FD70 /* Build configuration list for PBXNativeTarget "smithMicroTestTests" */;
 			buildPhases = (
+				6773C0964379242AC92D09C6 /* [CP] Check Pods Manifest.lock */,
 				EE3F2ACB21579E7E0043FD70 /* Sources */,
 				EE3F2ACC21579E7E0043FD70 /* Frameworks */,
 				EE3F2ACD21579E7E0043FD70 /* Resources */,
+				37D05660610CC1E6A38A83BF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -373,6 +383,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		37D05660610CC1E6A38A83BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-smithMicroTestTests/Pods-smithMicroTestTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-smithMicroTestTests/Pods-smithMicroTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		591FDE21F004E9571623B07B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -385,6 +419,24 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-smithMicroTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6773C0964379242AC92D09C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-smithMicroTestTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -474,7 +526,7 @@
 				EE5816072158346F001A5F18 /* TodoListModels.swift in Sources */,
 				EE1794242157BF47004FF37D /* LoginRouter.swift in Sources */,
 				EE58162E21598AC8001A5F18 /* ViewController+Alert.swift in Sources */,
-				EE3F2AD421579E7E0043FD70 /* smithMicroTestTests.swift in Sources */,
+				EE3F2AD421579E7E0043FD70 /* TodoListWorkerTests.swift in Sources */,
 				EE58162521583BBA001A5F18 /* RegistrationInteractor.swift in Sources */,
 				EE58162A21583F44001A5F18 /* FirebaseManager.swift in Sources */,
 				EE581643215AEC5B001A5F18 /* UIViewController+ActivityIndicator.swift in Sources */,
@@ -654,6 +706,7 @@
 		};
 		EE3F2ADC21579E7E0043FD70 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D98C7F363577777C6CDC0AA1 /* Pods-smithMicroTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -671,6 +724,7 @@
 		};
 		EE3F2ADD21579E7E0043FD70 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E66B5552439159EF1A03A7B /* Pods-smithMicroTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

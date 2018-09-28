@@ -2,4 +2,54 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "smithMicroTest/FirebaseManager.swift"
+            timestampString = "559790099.025252"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "saveItem(text:userId:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "smithMicroTest.FirebaseManager.saveItem(text: Swift.String, userId: Swift.String) -&gt; ()"
+                  moduleName = "smithMicroTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/catiavidinhas/Desktop/smithMicroTest/smithMicroTest/FirebaseManager.swift"
+                  timestampString = "559790099.106212"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "smithMicroTestTests.FirebaseManager.saveItem(text: Swift.String, userId: Swift.String) -&gt; ()"
+                  moduleName = "smithMicroTestTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/catiavidinhas/Desktop/smithMicroTest/smithMicroTest/FirebaseManager.swift"
+                  timestampString = "559790100.9041491"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
